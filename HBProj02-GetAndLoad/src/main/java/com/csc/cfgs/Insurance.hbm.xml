@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate?Hibernate Mapping DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.csc.domain.InsurancePolicyImpl"
+		table="INSURANCE_POLICY" dynamic-insert="false" >
+		<id name="policyId" column="POLICYID" />
+		<property name="policyName" column="POLICTYNAME" />
+		<property name="tenure" column="TENURE" />
+		<property name="premium" column="PREMIUM" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Connection properties -->
+		<property name="connection.url">jdbc:mysql://localhost/SPRINGDB</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Ram@0101</property>
+		<property name="connection.pool_size">30</property>
+
+		<!-- hibernate properties -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="dilect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- mapping file -->
+		<mapping resource="com/csc/cfgs/Insurance.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
