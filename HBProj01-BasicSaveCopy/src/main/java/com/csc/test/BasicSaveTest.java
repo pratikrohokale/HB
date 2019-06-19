@@ -28,7 +28,7 @@ public class BasicSaveTest {
 		ses = factory.openSession();
 
 		details = new EmpDetails();
-		details.setNo(111);
+		details.setNo(113);
 		details.setFname("Pratik");
 		details.setLname("Rohokale");
 		details.setMail("pratik.rohokale@gmail.com");
